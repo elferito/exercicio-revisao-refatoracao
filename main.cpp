@@ -21,7 +21,6 @@ int main() {
   eng3.setProjetos(2); 
   eng3.printSaida(8);
   
-  
   Vendedor vend1;
   vend1.setNome("Tonho Lannister");
   vend1.setSalarioHora(20);
