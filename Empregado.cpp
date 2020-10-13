@@ -3,19 +3,19 @@
 
 void Empregado::setSalarioHora(double _salarioHora) {
     salarioHora = _salarioHora;
-    } 
+} 
 
 void Empregado::setNome(std::string _nome) {
     nome = _nome;
-    } 
+} 
 
 double Empregado::getSalarioHora() {
     return salarioHora;
-    }  
+}  
 
 std::string Empregado::getNome() {
     return nome;
-    } 
+} 
 
 double Empregado::pagamentoMes(double horasTrabalhadas){	  
 	//Cálculo de hora extra (+50% se horasTrabalhadas > 8)
@@ -24,4 +24,4 @@ double Empregado::pagamentoMes(double horasTrabalhadas){
       horasTrabalhadas += horasExtras * PESO_HORAS_EXTRA;
     }
 	return horasTrabalhadas * salarioHora;
-};
+}
