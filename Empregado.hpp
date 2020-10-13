@@ -12,45 +12,19 @@ class Empregado {
   public: 
 
     //Essa funçao seta o salario por hora trabalhada
-    void setSalarioHora(double _salarioHora) {
-
-      salarioHora = _salarioHora;
-
-    } 
+    void setSalarioHora(double _salarioHora);
 
     //Essa funçao seta o nome do empregado
-    void setNome(std::string _nome) {
-
-      nome = _nome;
-
-    } 
+    void setNome(std::string _nome);
 
     //Essa funçao geta o salario por hora trabalhada
-    double getSalarioHora() {
-
-      return salarioHora;
-
-    }  
+    double getSalarioHora();
 
     //Essa funçao seta o nome do empregado
-    std::string getNome() {
-
-      return nome;
-
-    } 
+    std::string getNome();
 
     //essa funçao retorna o salario do empregado
-    double pagamentoMes(double horasTrabalhadas) {
- 
-      double _horasTrabalhadas = horasTrabalhadas;
-	  
-	    //Cálculo de hora extra (+50% se horasTrabalhadas > 8)
-      if (horasTrabalhadas > HORARIO_DIARIO_REGULAR) {
-        double horasExtras = horasTrabalhadas - HORARIO_DIARIO_REGULAR;
-        _horasTrabalhadas += horasExtras * PESO_HORAS_EXTRA;
-      }
-	    return _horasTrabalhadas * salarioHora;
-    }
+    double pagamentoMes(double horasTrabalhadas);
 
   private:
 
